@@ -335,8 +335,24 @@
 
 .about .region {
     grid-area: region;
+    margin:0 1rem;
+    padding-top:1rem;
 }
 
 .about .we {
     grid-area:we;
+    margin: 0 1rem;
+}
+
+.about .region h2,
+.about .we h2 {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.about .region p,
+.about .we p {
+    font-size: 1.1rem;
+
 }
