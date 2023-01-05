@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    padding:0;
+    font-size: 62.5%;
+}
+
+.hero {
+    background: url('/assets/img/field.jpg') no-repeat center center/cover;
+    height:100vh;
+}
+
+.logo {
+    width:100%;
+    border-radius: 50%;
+    margin-top:1rem;
+    animation-name: spin;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(360deg);
+    }
+}
+
+.hero h1, .hero p {
+    text-align:center;
+    color:white;
+    padding: 0 0 1rem 0;
+}
+
+.hero h1 {
+    font-size:3rem;
+}
+
+.hero p {
+    font-size:2rem;
+}
+
+.info {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width:80vw;
+    height:30vh;
+    margin:0 auto;
+    grid-template-areas:
+    'hours phone'
+    'hours maps'
+    'hours maps';
+    color:white;
+    margin-top:1rem;
+}
+
+.hours, .phone, .maps {
+    border:2px black solid;
+}
+
+.hours {
+    grid-area: hours;
+    /* align-self: center; */
+}
+
+.hours h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hours ul {
+    list-style: none;
+}
+
+.hours li {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.maps {
+    grid-area: maps;
+}
+
+.social-links {
+    display:flex;
+    margin: 0 auto;
+    width: 80vw;
+    height:10vh;
+    border:2px black solid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-links i {
+    color:white;
+    font-size:2rem;
+}
