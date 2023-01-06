@@ -299,24 +299,6 @@
     padding-bottom: 3rem;
 }
 
-/* .social-links {
-    display:flex;
-    margin: 0 auto;
-    width: 100vw;
-    height:10vh;
-    border:2px black solid;
-    justify-content: space-around;
-    align-items: center;
-    position:absolute;
-    bottom:0;
-}
-
-.social-links i {
-    color:white;
-    font-size:2rem;
-    padding: 0 3rem;
-}  */
-
 .about {
     display:grid;
     width:100%;
@@ -452,14 +434,14 @@
 }
 
 .event {
-    background-color: brown;
+    background-color: rgb(122, 34, 34);
+    padding-bottom:2rem;
 
 }
 
 .event > h2 {
     font-size: 3rem;
     text-align: center;
-    margin-top:10rem;
     padding: 1rem 0;
 }
 
@@ -475,4 +457,20 @@
     padding:1rem 0;
     margin:1rem 0;
     width:80%;
+}
+
+.social-links {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    padding:1rem 0;
+}
+
+.social-box i {
+    padding: 1rem 2rem;
+}
+
+.social-links p {
+    font-size: 1.5rem;
 }
