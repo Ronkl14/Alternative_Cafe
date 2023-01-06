@@ -306,7 +306,10 @@
     grid-area: button;
     font-size: 3rem;
     text-align: center;
-    margin-top:4rem;
+    position:absolute;
+    bottom:8rem;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 .button .btn {
