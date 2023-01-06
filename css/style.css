@@ -322,10 +322,22 @@
     width:100vw;
     height:50vh;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: .4fr 1fr 1fr;
     grid-template-areas:
+    'mateh heading heading'
     'mateh region region'
     'mateh we we';
+    margin-top:1rem;
+
+}
+
+.about > .heading {
+    grid-area: heading;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top:1rem;
+    border-bottom: 1px solid rgba(141, 138, 138, 0.7);
+    box-shadow: 3px;
 }
 
 .about .mateh {
@@ -336,7 +348,7 @@
 .about .region {
     grid-area: region;
     margin:0 1rem;
-    padding-top:1rem;
+    padding-top:1.7rem;
 }
 
 .about .we {
@@ -354,5 +366,86 @@
 .about .region p,
 .about .we p {
     font-size: 1.1rem;
+    padding-top:1rem;
+}
 
+.food {
+    display:grid;
+    width:100vw;
+    height:50vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:
+    'heading heading heading'
+    'coffee-img coffee coffee'
+    'sandwich sandwich sandwich-img'
+    'burger-img burger burger'
+    'alcohol alcohol alcohol-img';
+    margin-top:1rem;
+}
+
+.food > div {
+    margin: 1rem;
+}
+
+.food > .heading {
+    grid-area: heading;
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top:1rem;
+    border-bottom: 1px solid rgba(141, 138, 138, 0.7);
+    box-shadow: 3px;
+}
+
+.food .coffee-img {
+    grid-area:coffee-img;
+    background: url('/assets/img/coffee.jpg') no-repeat center center/cover;
+}
+
+.food .coffee {
+    grid-area:coffee;
+}
+
+.food .sandwich-img {
+    grid-area:sandwich-img;
+    background: url('/assets/img/sandwich.jpg') no-repeat center center/cover;
+}
+
+.food .sandwich {
+    grid-area:sandwich;
+}
+
+
+.food .burger-img {
+    grid-area:burger-img;
+    background: url('/assets/img/burgir.jpg') no-repeat center center/cover;
+}
+
+.food .burger {
+    grid-area:burger;
+}
+
+.food .alcohol-img {
+    grid-area:alcohol-img;
+    background: url('/assets/img/alcohol.jpg') no-repeat center center/cover;
+}
+
+.food .alcohol {
+    grid-area: alcohol;
+}
+
+.food .coffee h2,
+.food .sandwich h2,
+.food .burger h2,
+.food .alcohol h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.food .coffee p,
+.food .sandwich p,
+.food .burger p,
+.food .alcohol p {
+    font-size: 1.1rem;
+    padding-top:1rem;
 }
