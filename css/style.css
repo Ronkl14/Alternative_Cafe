@@ -299,12 +299,12 @@
     padding-bottom: 3rem;
 }
 
-.social-links {
+/* .social-links {
     display:flex;
     margin: 0 auto;
     width: 100vw;
     height:10vh;
-    /* border:2px black solid; */
+    border:2px black solid;
     justify-content: space-around;
     align-items: center;
     position:absolute;
@@ -315,11 +315,11 @@
     color:white;
     font-size:2rem;
     padding: 0 3rem;
-}
+}  */
 
 .about {
     display:grid;
-    width:100vw;
+    width:100%;
     height:50vh;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: .4fr 1fr 1fr;
@@ -371,7 +371,7 @@
 
 .food {
     display:grid;
-    width:100vw;
+    width:100%;
     height:50vh;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(5,1fr);
@@ -382,6 +382,7 @@
     'burger-img burger burger'
     'alcohol alcohol alcohol-img';
     margin-top:1rem;
+    margin-bottom:15rem;
 }
 
 .food > div {
@@ -399,7 +400,7 @@
 
 .food .coffee-img {
     grid-area:coffee-img;
-    background: url('/assets/img/coffee.jpg') no-repeat center center/cover;
+    background: url('/assets/img/coffee-2.jpg') no-repeat center center/cover;
 }
 
 .food .coffee {
@@ -418,7 +419,7 @@
 
 .food .burger-img {
     grid-area:burger-img;
-    background: url('/assets/img/burgir.jpg') no-repeat center center/cover;
+    background: url('/assets/img/burger-2.jpg') no-repeat center center/cover;
 }
 
 .food .burger {
@@ -448,4 +449,30 @@
 .food .alcohol p {
     font-size: 1.1rem;
     padding-top:1rem;
+}
+
+.event {
+    background-color: brown;
+
+}
+
+.event > h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top:10rem;
+    padding: 1rem 0;
+}
+
+.book-event {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.book-event input {
+    padding:1rem 0;
+    margin:1rem 0;
+    width:80%;
 }
