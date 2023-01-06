@@ -237,6 +237,7 @@
 .hours {
     grid-area: hours;
     /* align-self: center; */
+    padding-right:1rem;
     border-right: 1px solid rgba(141, 138, 138, 0.4);
 }
 
@@ -364,7 +365,7 @@
     'burger-img burger burger'
     'alcohol alcohol alcohol-img';
     margin-top:1rem;
-    margin-bottom:15rem;
+    margin-bottom:18rem;
 }
 
 .food > div {
@@ -443,6 +444,7 @@
     font-size: 3rem;
     text-align: center;
     padding: 1rem 0;
+    color:rgb(255, 255, 255);
 }
 
 .book-event {
