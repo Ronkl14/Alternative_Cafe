@@ -13,6 +13,7 @@
     ></script>
 
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css">
     <title>Alternative Cafe</title>
   </head>
   <body>
@@ -24,17 +25,18 @@
           <div>
             <div>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Our Food</a></li>
+                <li><a href="#event">Book an Event</a></li>
+                <li><a href="#contact">Contact us</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <header class="hero">
+    <header class="hero" id="hero">
       <div class="welcome">
         <img
           src="/assets/img/logo-no-bg-good-crop.png"
@@ -98,7 +100,7 @@
         </p>
       </div>
     </section>
-    <section class="food">
+    <section class="food" id="food">
       <h2 class="heading">What do we serve</h2>
       <div class="coffee-img"></div>
       <div class="coffee">
@@ -136,28 +138,28 @@
         </p>
       </div>
     </section>
-    <section class="event">
+    <section class="event" id="book">
       <h2>Book us for your event</h2>
       <form action="" class="book-event">
-        <input type="text" id="name" name="name" placeholder="Enter name" />
-        <input type="email" name="email" id="email" placeholder="Enter email" />
+        <input type="text" id="name" name="name" placeholder=" Enter name" />
+        <input type="email" name="email" id="email" placeholder=" Enter email" />
         <input
           type="text"
           name="phone"
           id="phone"
-          placeholder="Enter phone number"
+          placeholder=" Enter phone number"
         />
-        <input type="text" name="date" id="date" placeholder="Enter Date" />
+        <input type="text" name="date" id="date" placeholder=" Enter Date" />
         <input
           type="number"
           name="people"
           id="people"
-          placeholder="How many people"
+          placeholder=" How many people"
         />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" class="submit"/>
       </form>
     </section>
-    <footer class="social-links">
+    <footer class="social-links" id="footer">
       <div class="social-box">
         <i class="fa-brands fa-instagram fa-8x"></i>
         <i class="fa-brands fa-facebook fa-8x"></i>
