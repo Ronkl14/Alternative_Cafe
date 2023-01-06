@@ -80,15 +80,25 @@
 
 .hours {
   grid-area: hours;
-  /* align-self: center; */
   padding-right: 1rem;
   border-right: 1px solid rgba(141, 138, 138, 0.4);
 }
 
 .hours h2 {
+  text-align: center;
+}
+
+.hours h2,
+.phone h2,
+.maps h2,
+.about .region h2,
+.about .we h2,
+.food .coffee h2,
+.food .sandwich h2,
+.food .burger h2,
+.food .alcohol h2 {
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .hours ul {
@@ -106,29 +116,22 @@
   text-align: center;
 }
 
-.phone h2 {
-  font-size: 2rem;
-  font-weight: bold;
+.phone p,
+.maps p {
+  font-size: 1.5rem;
 }
 
 .phone p {
-  font-size: 1.5rem;
   padding-top: 0.9rem;
+}
+
+.maps p {
+    padding-top: 0.2rem;
 }
 
 .maps {
   grid-area: maps;
   text-align: center;
-}
-
-.maps h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.maps p {
-  font-size: 1.5rem;
-  padding-top: 0.2rem;
 }
 
 .map-icons {
@@ -138,40 +141,39 @@
 }
 
 .map-icons i {
-    padding: 0 2rem;
-    font-size: 2rem;
-    transition: all .3s ;
+  padding: 0 2rem;
+  font-size: 2rem;
+  transition: all 0.3s;
 }
 
 .map-icons i:active {
-    color:green;
-    font-size: 2.7rem;
+  color: green;
+  font-size: 2.7rem;
 }
 
 .button {
-    grid-area: button;
-    font-size: 3rem;
-    text-align: center;
-    position:absolute;
-    bottom:8rem;
-    left:50%;
-    transform: translateX(-50%);
+  grid-area: button;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  bottom: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .button .btn {
-    text-decoration: none;
-    color:white;
-    background-color: rgb(41, 90, 74);
-    padding: 1rem;
-    border-radius: 5px;
-    transition: all .3s ;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(41, 90, 74);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .button .btn:active {
-    font-size: 2.3rem;
-    box-shadow: 1px 1px 2px;
+  font-size: 2.3rem;
+  box-shadow: 1px 1px 2px;
 }
-
 
 .about {
   display: grid;
@@ -212,14 +214,12 @@
   margin: 0 1rem;
 }
 
-.about .region h2,
-.about .we h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .about .region p,
-.about .we p {
+.about .we p,
+.food .coffee p,
+.food .sandwich p,
+.food .burger p,
+.food .alcohol p {
   font-size: 1.1rem;
   padding-top: 1rem;
 }
@@ -289,22 +289,6 @@
   grid-area: alcohol;
 }
 
-.food .coffee h2,
-.food .sandwich h2,
-.food .burger h2,
-.food .alcohol h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.food .coffee p,
-.food .sandwich p,
-.food .burger p,
-.food .alcohol p {
-  font-size: 1.1rem;
-  padding-top: 1rem;
-}
-
 .event {
   background-color: rgb(122, 34, 34);
   padding-bottom: 2rem;
@@ -334,23 +318,23 @@
 }
 
 .book-event .submit {
-    color:white;
-    background-color: gray;
-    border:none;
-    border-radius: 5px;
-    transition: all .3s ;
+  color: white;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 
 .book-event .submit:active {
-    box-shadow: 1px 1px 2px;
+  box-shadow: 1px 1px 2px;
 }
 
 .book-event .submit:active {
-    box-shadow: 1px 1px 3px;
+  box-shadow: 1px 1px 3px;
 }
 
 .book-event input:focus {
-    outline-color: rgb(97, 61, 13);
+  outline-color: rgb(97, 61, 13);
 }
 
 .social-links {
@@ -363,12 +347,12 @@
 
 .social-box i {
   padding: 1rem 2rem;
-  transition: all .3s ;
+  transition: all 0.3s;
 }
 
 .social-box i:active {
-    color:green;
-    font-size: 2.7rem;
+  color: green;
+  font-size: 2.7rem;
 }
 
 .social-links p {
