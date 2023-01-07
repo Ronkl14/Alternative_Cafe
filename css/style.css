@@ -376,14 +376,106 @@
   }
 
   .about {
-    grid-gap:1rem;
+    grid-gap: 1rem;
   }
 
   .food {
-    margin-top:6rem;
+    margin-top: 6rem;
   }
 
   .event {
-    margin-top:22rem;
+    margin-top: 22rem;
   }
+
+  .book-event input {
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .welcome .logo {
+    width: 20%;
+  }
+
+  .about .region p,
+  .about .we p,
+  .food .coffee p,
+  .food .sandwich p,
+  .food .burger p,
+  .food .alcohol p {
+    font-size: 1.5rem;
+    padding: 1rem 3rem 0 3rem;
+  }
+
+  .food > div {
+    padding: 3rem 0;
+  }
+
+  .event {
+    margin-top: 45rem;
+  }
+
+  .book-event input {
+    width: 50%;
+  }
+
+  .hours ul {
+    margin-left: 9rem;
+  }
+
+  .hours li{
+    font-size: 1.8rem;
+  }
+
+  .welcome > p {
+    font-size: 2.1rem;
+  }
+
+  .info p {
+    font-size:1.8rem;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .welcome .logo {
+    width: 15%;
+  }
+
+  .about .region p,
+  .about .we p,
+  .food .coffee p,
+  .food .sandwich p,
+  .food .burger p,
+  .food .alcohol p {
+    font-size: 1.7rem;
+  }
+
+  .book-event input {
+    width: 40%;
+  }
+
+  .social-box i {
+    font-size: 3rem;
+  }
+
+  .social-links p {
+    font-size: 1.7rem;
+  }
+}
+
+@media all and (min-width: 1536px) {
+  .welcome .logo {
+    width:13%;
+  }
+
+  .map-icons i {
+    padding: 3rem 2.5rem;
+    font-size: 3rem;
+    transition: all 0.3s;
+  }
+
+  .maps h2 {
+    padding-top: 3rem;
+  }
+
 }
