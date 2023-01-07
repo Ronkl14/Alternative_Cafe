@@ -318,10 +318,6 @@
 }
 
 .book-event .submit:active {
-  box-shadow: 1px 1px 2px;
-}
-
-.book-event .submit:active {
   box-shadow: 1px 1px 3px;
 }
 
@@ -386,16 +382,18 @@
     font-size: 2.5rem;
   }
 
-  .maps{
-    padding-top:2rem;
+  .maps {
+    padding-top: 2rem;
   }
 
-  .map-icons i {
+  .map-icons i,
+  .social-box i {
     padding: 3rem 3rem;
     font-size: 3rem;
   }
 
-  .map-icons i:active {
+  .map-icons i:active,
+  .social-box i:active {
     color: green;
     font-size: 3.7rem;
   }
@@ -403,13 +401,44 @@
   .button {
     font-size: 5rem;
   }
-  
+
   .button .btn {
     padding: 1.8rem;
   }
-  
+
   .button .btn:active {
     font-size: 4rem;
     box-shadow: 1px 1px 2px;
+  }
+
+  .about .region p,
+  .about .we p,
+  .food .coffee p,
+  .food .sandwich p,
+  .food .burger p,
+  .food .alcohol p {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+
+  .about,
+  .food {
+    grid-gap:1rem;
+  }
+
+  .event {
+    margin-top: 24rem;
+  }
+
+  input::placeholder{
+    font-size: 1.8rem;
+  }
+
+  .book-event .submit {
+    font-size: 2.3rem;
+  }
+
+  .social-links p {
+    font-size: 2.2rem;
   }
 }
