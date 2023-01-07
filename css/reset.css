@@ -5,3 +5,7 @@
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
 }
+
+.nav-big-screen {
+  display: none;
+}

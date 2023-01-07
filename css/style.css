@@ -393,8 +393,54 @@
 }
 
 @media all and (min-width: 900px) {
+  .menu-wrap {
+    display: none;
+  }
+
+  .button{ 
+    bottom:3rem;
+  }
+
+  .nav-big-screen {
+    display:block;
+
+  }
+
+  .nav-big-screen ul {
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    background-color: rgb(245, 235, 235);
+    position:fixed;
+    top:0;
+    z-index:10;
+    
+  }
+
+  .nav-big-screen li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color:black;
+  }
+
+  .nav-big-screen li {
+    padding: 1.5rem 3rem;
+    border-right: 2px gray solid;
+    border-left: 2px gray solid;
+    transition: all .5s ease;
+  }
+
+  .nav-big-screen li:hover {
+    background-color: gray;
+    cursor: pointer;
+    box-shadow: 5px 3px 4px 0;
+  }
+
   .welcome .logo {
-    width: 20%;
+    width: 15%;
+    margin-top:7rem;
   }
 
   .about .region p,
@@ -438,7 +484,7 @@
 
 @media all and (min-width: 1200px) {
   .welcome .logo {
-    width: 15%;
+    width: 10%;
   }
 
   .about .region p,
