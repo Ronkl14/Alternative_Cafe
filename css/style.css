@@ -126,7 +126,7 @@
 }
 
 .maps p {
-    padding-top: 0.2rem;
+  padding-top: 0.2rem;
 }
 
 .maps {
@@ -189,7 +189,8 @@
   margin-bottom: 2rem;
 }
 
-.about > .heading {
+.about > .heading,
+.food > .heading {
   grid-area: heading;
   text-align: center;
   font-size: 3.5rem;
@@ -242,15 +243,6 @@
 
 .food > div {
   margin: 1rem;
-}
-
-.food > .heading {
-  grid-area: heading;
-  text-align: center;
-  font-size: 3.5rem;
-  padding-top: 1rem;
-  border-bottom: 1px solid rgba(141, 138, 138, 0.7);
-  box-shadow: 3px;
 }
 
 .food .coffee-img {
@@ -357,4 +349,67 @@
 
 .social-links p {
   font-size: 1.5rem;
+}
+
+@media all and (min-width: 768px) {
+  .hours h2,
+  .phone h2,
+  .maps h2,
+  .about .region h2,
+  .about .we h2,
+  .food .coffee h2,
+  .food .sandwich h2,
+  .food .burger h2,
+  .food .alcohol h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .welcome h1 {
+    font-size: 4.3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .welcome p {
+    font-size: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .hours li {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .phone p,
+  .maps p {
+    font-size: 2.5rem;
+  }
+
+  .maps{
+    padding-top:2rem;
+  }
+
+  .map-icons i {
+    padding: 3rem 3rem;
+    font-size: 3rem;
+  }
+
+  .map-icons i:active {
+    color: green;
+    font-size: 3.7rem;
+  }
+
+  .button {
+    font-size: 5rem;
+  }
+  
+  .button .btn {
+    padding: 1.8rem;
+  }
+  
+  .button .btn:active {
+    font-size: 4rem;
+    box-shadow: 1px 1px 2px;
+  }
 }
